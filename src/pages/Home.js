@@ -1,32 +1,22 @@
-import Logo from "../assets/img/logo.png";
+
 import "../styles/Home.css";
-import { Container, Col, Row, Image } from "react-bootstrap";
 import { Typography } from "antd";
-import { PhoneFilled } from "@ant-design/icons";
-const { Title } = Typography;
+import NavBar from "../components/NavBar";
+import LogoContacto from "../components/LogoContacto";
+import SearchBar from "../components/SearchBar";
+import Banner from '../components/Banner';
+import Categorias from '../components/Categorias'
+// const { Title } = Typography;
 
 function Home() {
   return (
-    <Container fluid>
-      <Row>
-        <Col>
-          <Image
-            className="img-logo"
-            src={Logo}
-            alt="logo display"
-            style={{ width: "22rem" }}
-          />
-        </Col>
-
-        <Col className="phone-img">
-          <PhoneFilled className="tel-icon" />
-        </Col>
-        <Col>
-          <Row className="fono">Fono</Row>
-          <Row className="contacto">(+56) 2 2623 3000</Row>
-        </Col>
-      </Row>
-    </Container>
+    <div>
+      <NavBar/>
+      <LogoContacto/>
+      <SearchBar />
+      <Banner />
+      <Categorias />
+    </div>
   );
 }
 
