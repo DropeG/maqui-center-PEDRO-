@@ -1,0 +1,16 @@
+.carousel-indicators li {
+    background-color: rgb(153, 153, 153);
+    background-color: rgba(70, 70, 70, 0.25);
+    border-style: none;
+    border-top: dotted;
+    width: 10%;
+    border-width: 5px;
+    border-color: #66BFBF;
+  }
+  
+  .carousel-indicators .active {
+    border-style: none;
+    border-top: dotted;
+    border-width: 5px;
+    border-color: #66BFBF;
+  }
